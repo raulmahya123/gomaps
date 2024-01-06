@@ -2,11 +2,6 @@ package peda
 
 import "go.mongodb.org/mongo-driver/bson/primitive"
 
-type DBInfo struct {
-	DBString string
-	DBName   string
-}
-
 type GeometryPolygon struct {
 	Coordinates [][][]float64 `json:"coordinates" bson:"coordinates"`
 	Type        string        `json:"type,omitempty" bson:"type,omitempty"`
